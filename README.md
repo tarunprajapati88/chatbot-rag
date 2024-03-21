@@ -11,14 +11,14 @@ Here are some key points about the project:
 ## RAG - ChatBot Interface: First Boot and In Usage
 The very first time the user launches the app, this will be the screen of the app. Note that the user cannot send any messages, since there are no documents uploaded.
 
-![user_interface](images/user_interface.png)
+![user_interface](Images/user_interface.png)
 
 The next time that the user launches the app, the chat box will be available and there will be a list of the uploaded documents. If the user tries to upload the same document again, the "process" button will not appear. When the user asks a question, the model will give a response based on the question, the content that was retrieved from the database, and the chat history. In the image below, we can see that the model is aware of the chat history, and that the source of the answer is displayed in the sidebar.
 
-![app_in_use](images/app_in_use.png)
+![app_in_use](Images/app_in_use.png)
 
 ## How it Works
 
-![project_schema](images/project_schema.png)
+![project_schema](Images/project_schema.png)
 
 ## App Usage
