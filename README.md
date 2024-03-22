@@ -36,9 +36,15 @@ Also, to use the app, it's assumed that you have python installed
 
 ### Step 1: Create .env file
 Copy this repo or download the files as a zip and extract it. Navigate to the folder where the files README and requirements are located. You will see the app folder too. Create a new txt file and paste this: 
+
+```shell
 GOOGLE_API_KEY = "apikey"
+```
+
 Now, paste the API key that you generated into the quotation marks. It should look something like this: GOOGLE_API_KEY = "AIzaSyCJOZtTkyN9rfuXEjTtngeubYTUne"
+
 Save the file as an environment file, with .env as the name. To do this, when saving the file, click on Type and choose "Unknown(*.). Make sure that the name of the file is .env
+
 When the file is saved, you should see a file named .env with type "Environment File" in the folder, together with the README and requirements files
 
 ### Step 2: Install Packages
