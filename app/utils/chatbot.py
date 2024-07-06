@@ -63,9 +63,9 @@ def chat(chat_history, vectordb):
     user_query = st.chat_input("Ask a question:")
     if user_query is not None and user_query != "":
         # Generate response based on user's query, chat history and vectorstore
-        response, context = get_response(user_query, chat_history[-11:], vectordb)
+        response, context = get_response(user_query, chat_history, vectordb)
         # Update chat history. The model uses up to 10 previous messages to incorporate into the response
-        chat_history = chat_history[-10:] + [HumanMessage(content=user_query), AIMessage(content=response)]
+        chat_history = chat_history + [HumanMessage(content=user_query), AIMessage(content=response)]
         # Display source of the response on sidebar
         with st.sidebar:
                 metadata_dict = defaultdict(list)
